@@ -44,7 +44,7 @@ export default function LoginScreen() {
         : { phone: "+91" + phone, password: password };
 
       const response = await fetch(
-        `http://192.168.0.127:5000/api/auth${endpoint}`,
+        `http://10.1.0.177:5000/api/auth${endpoint}`,
         {
           method: "POST",
           headers: {
